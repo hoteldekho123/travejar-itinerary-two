@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dynamic Calendar</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calendar {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none; /* Initially hidden */
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+}
+
+.calendar-body {
+  padding: 10px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.selected-date-input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.prev-month,
+.next-month {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.prev-month:focus,
+.next-month:focus {
+  outline: none;
+}
+
+.prev-month:active,
+.next-month:active {
+  transform: translateY(2px);
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="date" id="selected-date-input" class="selected-date-input">
+    <div class="calendar">
+      <div class="calendar-header">
+        <button class="prev-month">&lt;</button>
+        <h2 id="month-year"></h2>
+        <button class="next-month">&gt;</button>
+      </div>
+      <div class="calendar-body">
+        <table>
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script>
+    const calendar = document.getElementById('calendar-table');
+const monthYear = document.getElementById('month-year');
+const prevMonth = document.querySelector('.prev-month');
+const nextMonth = document.querySelector('.next-month');
+const selectedDateInput = document.getElementById('selected-date-input');
+const calendarContainer = document.querySelector('.calendar');
+
+let currentDate = new Date();
+
+const updateCalendar = () => {
+  const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+  const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+
+  calendar.innerHTML = '';
+
+  let day = 1;
+  for (let i = 0; i < 6; i++) {
+    const row = document.createElement('tr');
+
+    for (let j = 0; j < 7; j++) {
+      const cell = document.createElement('td');
+
+      if (i === 0 && j < firstDay) {
+        cell.textContent = '';
+      } else if (day > daysInMonth) {
+        break;
+      } else {
+        cell.textContent = day;
+        day++;
+
+        if (currentDate.getFullYear() === new Date().getFullYear() &&
+            currentDate.getMonth() === new Date().getMonth() &&
+            day === new Date().getDate()) {
+          cell.classList.add('today');
+        }
+
+        cell.addEventListener('click', () => {
+          selectDate(cell);
+        });
+      }
+
+      row.appendChild(cell);
+    }
+
+    calendar.appendChild(row);
+  }
+
+  monthYear.textContent = `${currentDate.toLocaleString('default', { month: 'long' })} ${currentDate.getFullYear()}`;
+};
+
+const selectDate = (cell) => {
+  const date = new Date(currentDate.getFullYear(), currentDate.getMonth(), cell.textContent);
+
+  // Set the selected date in the input
+  selectedDateInput.value = date.toISOString().split('T')[0];
+
+  // Add selected styling to the cell
+  const prevSelected = calendar.querySelector('.selected');
+  if (prevSelected) {
+    prevSelected.classList.remove('selected');
+  }
+  cell.classList.add('selected');
+
+  // Hide the calendar
+  calendarContainer.style.display = 'none';
+};
+
+selectedDateInput.addEventListener('focus', () => {
+  calendarContainer.style.display = 'block';
+  updateCalendar();
+});
+
+prevMonth.addEventListener('click', () => {
+  currentDate.setMonth(currentDate.getMonth() - 1);
+  updateCalendar();
+});
+
+nextMonth.addEventListener('click', () => {
+  currentDate.setMonth(currentDate.getMonth() + 1);
+  updateCalendar();
+});
+
+updateCalendar();
+  </script>
+</body>
+</html>

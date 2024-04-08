@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="glightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pickmeup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="intlTelInput.min.css">
+</head>
+
+<body>
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary">Hom</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </header>
+  <!-- Swiper -->
+    <main class="page-main mx-auto">
+        <section class="itinerary-page-new mx-auto my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h1 class="itinerary-main-heading mb-0">5 Night 6 Days Dubai Honeymoon Trip With Luxury Hotel</h1>
+                            <div class="best-price-title">
+                                <i class="fa-solid fa-check"></i> Best Price Guaranteed
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="itinerary-review-card d-flex flex-column align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <ul class="list-unstyled d-flex itinerary-star-main align-items-center mb-0">
+                                        <li class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-star"></i></li>
+                                        <li class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-star"></i></li>
+                                        <li class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-star"></i></li>
+                                        <li class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-star"></i></li>
+                                        <li class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                    <span class="review-full d-block">
+                                        5
+                                    </span>
+                                </div>
+                                <div class="itinerary-review-based">
+                                    Based on <span>57 Review</span> slide banner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-8">
+                    <div class="itinerary-inner-card overflow-hidden">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card1.webp" class="glightbox">
+                                            <img  src="card1.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card2.webp" class="glightbox">
+                                            <img  src="card2.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card3.jpeg" class="glightbox">
+                                            <img  src="card3.jpeg" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card4.webp" class="glightbox">
+                                            <img  src="card4.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card5.jpg" class="glightbox">
+                                            <img  src="card5.jpg" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card6.webp" class="glightbox">
+                                            <img  src="card6.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card7.jpg" class="glightbox">
+                                            <img  src="card7.jpg" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card8.webp" class="glightbox">
+                                            <img  src="card8.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card9.webp" class="glightbox">
+                                            <img  src="card9.webp" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="itinerary-img">
+                                        <a href="card10.jpg" class="glightbox">
+                                            <img  src="card10.jpg" class="h-100 w-100 img-fluid" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next slider-btn rounded-circle"></div>
+                            <div class="swiper-button-prev slider-btn rounded-circle"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper swiper-bottom">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="card1.webp" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card2.webp" class="h-100 w-100 img-fluid object-fit-cover"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card3.jpeg" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card4.webp" class="h-100 w-100 img-fluid object-fit-cover"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card5.jpg" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card6.webp" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card7.jpg" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card8.webp" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card9.webp" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="card10.jpg" class="h-100 w-100 img-fluid object-fit-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="itinerary-right-card h-100">
+                        <form action="">
+                            <div class="itinerary-right-heading">
+                                From ₹7,311.93
+                            </div>
+                            <div class="travejar-input-group mt-3">
+                                <label for="" class="trave-label">Select Date</label>
+                                <div class="mt-2 position-relative">
+                                    <div class="d-flex align-items-center position-relative calendar-input-main">
+                                        <span class="calendar-icon position-absolute border-end d-flex align-items-center justify-content-center"><i class="fa-regular fa-calendar-days"></i></span>
+                                        <input type="text" id="datepicker" class="calendar-input border" placeholder="Select date">
+                                    </div>
+                                    <div class="calendar calendar-new w-100" id="calendar">
+                                        <div class="calendar-header d-flex align-items-center justify-content-between">
+                                            <span id="prevMonth" class="calendar-button d-flex align-items-center justify-content-center rounded-circle border-0"><i class="fa-solid fa-chevron-left"></i></span>
+                                            <span id="currentMonthYear" class="calendar-heading"></span>
+                                            <span id="nextMonth" class="calendar-button d-flex align-items-center justify-content-center rounded-circle border-0"><i class="fa-solid fa-chevron-right"></i></span>
+                                        </div>
+                                        <table id="calendarTable" class="w-100">
+                                            <thead class="calendar-head">
+                                                <tr id="weekDays"></tr>
+                                            </thead>
+                                            <tbody id="calendarBody" class="calendar-detail"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="travejar-input-group mt-3">
+                                <label for="" class="trave-label">Travelers</label>
+                                <div class="position-relative traveler-data mt-2">
+                                    <a href="javascript:;" class="traveler-data-btn text-decoration-none border w-100 bg-transparent d-flex justify-content-between align-items-center" id="toggleButton">
+                                        <span class="d-flex align-items-center h-100">
+                                            <span class="user-icon d-flex align-items-center justify-content-center border-end h-100"><i class="fa-regular fa-user"></i></span>
+                                            <span class="traveler-data-btn-inner d-flex align-items-center w-100 h-100">
+                                                4 Adult
+                                            </span>
+                                        </span>
+                                        <span class="d-flex align-items-center h-100 toggleicon justify-content-center">
+                                            <i class="fa-solid fa-sort-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="w-100 traveler-menu bg-white overflow-hidden border position-absolute" id="targetElement">
+                                        <div class="traveler-menu-header bg-light">
+                                            You can select up to 15 travelers in total.
+                                        </div>
+                                        <div class="traveler-menu-body border-top">
+                                            <div class="traveler-inner-data row align-items-center">
+                                                <div class="col">
+                                                    <div class="traveler-menu-title">
+                                                        Traveler (14-55)
+                                                    </div>
+                                                    <div class="min-max">
+                                                        Minimum: 1, Maximum: 15
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="traveler-group d-flex align-items-center">
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none minus increment"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                                                    
+                                                        <input type="text" class="border-0 text-center" id="adults" max="4" value="0">
+                                                    
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none plus increment"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="traveler-inner-data row mt-2 pt-1 align-items-center">
+                                                <div class="col">
+                                                    <div class="traveler-menu-title">
+                                                        Traveler (14-55)
+                                                    </div>
+                                                    <div class="min-max">
+                                                        Minimum: 1, Maximum: 15
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="traveler-group d-flex align-items-center">
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none minus increment"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                                                    
+                                                        <input type="text" class="border-0 text-center" id="adults" max="4" value="0">
+                                                    
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none plus increment"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="traveler-inner-data mt-2 pt-1 row align-items-center">
+                                                <div class="col">
+                                                    <div class="traveler-menu-title">
+                                                        Traveler (14-55)
+                                                    </div>
+                                                    <div class="min-max">
+                                                        Minimum: 1, Maximum: 15
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="traveler-group d-flex align-items-center">
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none minus increment"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                                                    
+                                                        <input type="text" class="border-0 text-center" id="adults" max="4" value="0">
+                                                    
+                                                        <a href="#" class="input-group-addon d-flex align-items-center justify-content-center rounded-circle text-decoration-none plus increment"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 pt-1 align-items-center justify-content-center">
+                                                <button class="traveler-apply-btn w-100 border-0">Apply Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="travejar-input-group mt-3">
+                                <label for="" class="trave-label">Tour Time</label>
+                                <div class="custom-select position-relative">
+                                    <div class="custom-select">
+                                        <select id="mySelect" class="d-none">
+                                          <option value="1" disabled>Select Time</option>
+                                          <option value="2">11:00 AM</option>
+                                          <option value="3">04:00 PM</option>
+                                          <option value="4">07:00 PM</option>
+                                          <option value="5">09:00 PM</option>
+                                          <option value="6">12:00 PM</option>
+                                          <option value="7">02:00 PM</option>
+                                          <option value="8">03:00 PM</option>
+                                          <option value="9">08:00 PM</option>
+                                        </select>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 d-flex align-items-center justify-content-center">
+                                <a href="form.html" target="_blank" class="update-btn w-100 border-0 text-center text-decoration-none">
+                                    Update Search
+                                </a>
+                            </div>
+                        </form>
+                        <div class="free-cancel-check d-flex">
+                            <span class="cancel-check-icon d-flex align-items-center justify-content-center rounded-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span>
+                                <a href="">Free cancellationup</a> to 24 hours before the experience starts (local time)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="itineray-select-section mb-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="select-card overflow-hidden border d-flex flex-column w-100 active" id="div1">
+                        <div class="select-card-top overflow-hidden">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="select-card-check rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="col ps-0 col-center position-relative">
+                                    <div class="select-card-heading">
+                                        3 Star Hotel Package
+                                    </div>
+                                    <div class="select-card-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis dolorum temporibus dolore ea quas, praesentium facilis soluta accusamus, fuga minus possimus repudiandae ratione ad ipsam eos rerum quod ipsa.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-auto">
+                                    <div class="text-center">
+                                        <div class="select-card-price">
+                                            INR 31901
+                                        </div>
+                                        <div class="select-price-adult">
+                                            Adults x INR 83789  
+                                        </div>
+                                        <div class="select-card-btn-main">
+                                            <button onclick="toggleDiv(1)" class="border-0 select-card-btn">Select Package </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-card-bottom border-top">
+                            <div class="accordion select-accordion" id="accordionExample">
+                                <div class="accordion-item border-0">
+                                    <div class="accordion-header" id="itineraryone">
+                                        <button class="accordion-button shadow-none bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itinerary1" aria-expanded="true" aria-controls="itinerary1">
+                                            Show Inclusion Details
+                                        </button>
+                                    </div>
+                                    <div id="itinerary1" class="accordion-collapse border-top collapse" aria-labelledby="itineraryone" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="select-data-heading">
+                                                Price Inclusions
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Accommodation
+                                            </div>
+                                            <div class="select-data-title">
+                                                <b>Hotel Name :</b> Grand Excelsior/ Holiday International Bur Dubai/ Similar
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Additional Services
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Accommodation at above-proposed hotels in 01 Double occupancies.</li>
+                                                <li class="position-relative">Daily Breakfast at the Hotel.</li>
+                                                <li class="position-relative">All Transfers on a private basis and Sightseeing on a private basis.</li>
+                                                <li class="position-relative">AC Transport SUV ( Toyota Sienna /Similar)</li>
+                                                <li class="position-relative">Dhow Cruise Dinner.</li>
+                                                <li class="position-relative">Abu Dhabi City Tour Private Basis with Ferrari World Entrance ticket</li>
+                                                <li class="position-relative">Dubai Mall Aquarium Entrance Ticket</li>
+                                                <li class="position-relative">Burj Khalifa non-prime hours tickets (124 + 125 Floor).</li>
+                                                <li class="position-relative">Dubai Frame Visit (Photostop)</li>
+                                                <li class="position-relative">Red Dunes Desert Safari with BBQ on Sharing basis.&nbsp;</li>
+                                                <li class="position-relative">Miracle Garden Entrance Ticket</li>
+                                                <li class="position-relative">Global Village Entrance Ticket</li>
+                                                <li class="position-relative">Atlantis Aquaventure and Lost Chambers</li>
+                                                <li class="position-relative">Medical Travel Insurance.</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Guide
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Driver Cum Guide</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Meals
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Dhow Cruise Dinner</li>
+                                                <li class="position-relative">BBQ Dinner at Desert Safari</li>
+                                            </ul>
+                                            <div class="select-data-heading">
+                                                Exclusions
+                                            </div>
+                                            <ul class="exclustions-list list-unstyled d-flex flex-column">
+                                                <li class="position-relative">Any Local &amp; International airfare.</li>
+                                                <li class="position-relative">Beverages, Tips, laundry, etc.</li>
+                                                <li class="position-relative">Hotel City Tax.</li>
+                                                <li class="position-relative">Dubai Visa.</li>
+                                                <li class="position-relative">Dubai Frame Entrance Ticket</li>
+                                                <li class="position-relative">Services that are not mentioned in the inclusions.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-card overflow-hidden border d-flex flex-column w-100 mt-3" id="div2">
+                        <div class="select-card-top overflow-hidden">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="select-card-check rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="col ps-0 col-center position-relative">
+                                    <div class="select-card-heading">
+                                        4 Star Hotel Package
+                                    </div>
+                                    <div class="select-card-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis dolorum temporibus dolore ea quas, praesentium facilis soluta accusamus, fuga minus possimus repudiandae ratione ad ipsam eos rerum quod ipsa.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-auto">
+                                    <div class="text-center">
+                                        <div class="select-card-price">
+                                            INR 85514
+                                        </div>
+                                        <div class="select-price-adult">
+                                            Adults x INR 85514  
+                                        </div>
+                                        <div class="select-card-btn-main">
+                                            <button onclick="toggleDiv(2)" class="border-0 select-card-btn">Select Package </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-card-bottom border-top">
+                            <div class="accordion select-accordion" id="accordionExample">
+                                <div class="accordion-item border-0">
+                                    <div class="accordion-header" id="itinerarytwo">
+                                        <button class="accordion-button shadow-none bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itinerary2" aria-expanded="true" aria-controls="itinerary2">
+                                            Show Inclusion Details
+                                        </button>
+                                    </div>
+                                    <div id="itinerary2" class="accordion-collapse border-top collapse" aria-labelledby="itinerarytwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="select-data-heading">
+                                                Price Inclusions
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Accommodation
+                                            </div>
+                                            <div class="select-data-title">
+                                                <b>Hotel Name :</b> Grand Excelsior/ Holiday International Bur Dubai/ Similar
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Additional Services
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Accommodation at above-proposed hotels in 01 Double occupancies.</li>
+                                                <li class="position-relative">Daily Breakfast at the Hotel.</li>
+                                                <li class="position-relative">All Transfers on a private basis and Sightseeing on a private basis.</li>
+                                                <li class="position-relative">AC Transport SUV ( Toyota Sienna /Similar)</li>
+                                                <li class="position-relative">Dhow Cruise Dinner.</li>
+                                                <li class="position-relative">Abu Dhabi City Tour Private Basis with Ferrari World Entrance ticket</li>
+                                                <li class="position-relative">Dubai Mall Aquarium Entrance Ticket</li>
+                                                <li class="position-relative">Burj Khalifa non-prime hours tickets (124 + 125 Floor).</li>
+                                                <li class="position-relative">Dubai Frame Visit (Photostop)</li>
+                                                <li class="position-relative">Red Dunes Desert Safari with BBQ on Sharing basis.&nbsp;</li>
+                                                <li class="position-relative">Miracle Garden Entrance Ticket</li>
+                                                <li class="position-relative">Global Village Entrance Ticket</li>
+                                                <li class="position-relative">Atlantis Aquaventure and Lost Chambers</li>
+                                                <li class="position-relative">Medical Travel Insurance.</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Guide
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Driver Cum Guide</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Meals
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Dhow Cruise Dinner</li>
+                                                <li class="position-relative">BBQ Dinner at Desert Safari</li>
+                                            </ul>
+                                            <div class="select-data-heading">
+                                                Exclusions
+                                            </div>
+                                            <ul class="exclustions-list list-unstyled d-flex flex-column">
+                                                <li class="position-relative">Any Local &amp; International airfare.</li>
+                                                <li class="position-relative">Beverages, Tips, laundry, etc.</li>
+                                                <li class="position-relative">Hotel City Tax.</li>
+                                                <li class="position-relative">Dubai Visa.</li>
+                                                <li class="position-relative">Dubai Frame Entrance Ticket</li>
+                                                <li class="position-relative">Services that are not mentioned in the inclusions.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-card overflow-hidden border d-flex flex-column w-100 mt-3" id="div3">
+                        <div class="select-card-top overflow-hidden">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="select-card-check rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="col ps-0 col-center position-relative">
+                                    <div class="select-card-heading">
+                                        5 Star Hotel Package
+                                    </div>
+                                    <div class="select-card-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis dolorum temporibus dolore ea quas, praesentium facilis soluta accusamus, fuga minus possimus repudiandae ratione ad ipsam eos rerum quod ipsa.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-auto">
+                                    <div class="text-center">
+                                        <div class="select-card-price">
+                                            INR 104489
+                                        </div>
+                                        <div class="select-price-adult">
+                                            Adults x INR 104489  
+                                        </div>
+                                        <div class="select-card-btn-main">
+                                            <button onclick="toggleDiv(3)" class="border-0 select-card-btn">Select Package </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-card-bottom border-top">
+                            <div class="accordion select-accordion" id="accordionExample">
+                                <div class="accordion-item border-0">
+                                    <div class="accordion-header" id="itinerarythree">
+                                        <button class="accordion-button shadow-none bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itinerary3" aria-expanded="true" aria-controls="itinerary3">
+                                            Show Inclusion Details
+                                        </button>
+                                    </div>
+                                    <div id="itinerary3" class="accordion-collapse border-top collapse" aria-labelledby="itinerarythree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="select-data-heading">
+                                                Price Inclusions
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Accommodation
+                                            </div>
+                                            <div class="select-data-title">
+                                                <b>Hotel Name :</b> Grand Excelsior/ Holiday International Bur Dubai/ Similar
+                                            </div>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Additional Services
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Accommodation at above-proposed hotels in 01 Double occupancies.</li>
+                                                <li class="position-relative">Daily Breakfast at the Hotel.</li>
+                                                <li class="position-relative">All Transfers on a private basis and Sightseeing on a private basis.</li>
+                                                <li class="position-relative">AC Transport SUV ( Toyota Sienna /Similar)</li>
+                                                <li class="position-relative">Dhow Cruise Dinner.</li>
+                                                <li class="position-relative">Abu Dhabi City Tour Private Basis with Ferrari World Entrance ticket</li>
+                                                <li class="position-relative">Dubai Mall Aquarium Entrance Ticket</li>
+                                                <li class="position-relative">Burj Khalifa non-prime hours tickets (124 + 125 Floor).</li>
+                                                <li class="position-relative">Dubai Frame Visit (Photostop)</li>
+                                                <li class="position-relative">Red Dunes Desert Safari with BBQ on Sharing basis.&nbsp;</li>
+                                                <li class="position-relative">Miracle Garden Entrance Ticket</li>
+                                                <li class="position-relative">Global Village Entrance Ticket</li>
+                                                <li class="position-relative">Atlantis Aquaventure and Lost Chambers</li>
+                                                <li class="position-relative">Medical Travel Insurance.</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Guide
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Driver Cum Guide</li>
+                                            </ul>
+                                            <div class="select-data-subheading d-flex align-items-center">
+                                                <div class="select-data-like d-flex align-items-center justify-content-center">
+                                                    <img src="itinerary-like.svg" alt="like" class="h-100 w-100 img-fluid">
+                                                </div>
+                                                Meals
+                                            </div>
+                                            <ul class="accommodation-list d-flex list-unstyled flex-column ">
+                                                <li class="position-relative">Dhow Cruise Dinner</li>
+                                                <li class="position-relative">BBQ Dinner at Desert Safari</li>
+                                            </ul>
+                                            <div class="select-data-heading">
+                                                Exclusions
+                                            </div>
+                                            <ul class="exclustions-list list-unstyled d-flex flex-column">
+                                                <li class="position-relative">Any Local &amp; International airfare.</li>
+                                                <li class="position-relative">Beverages, Tips, laundry, etc.</li>
+                                                <li class="position-relative">Hotel City Tax.</li>
+                                                <li class="position-relative">Dubai Visa.</li>
+                                                <li class="position-relative">Dubai Frame Entrance Ticket</li>
+                                                <li class="position-relative">Services that are not mentioned in the inclusions.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="itinerary-form-card sticky-top">
+                        <div class="itinerary-form-heading">
+                            Booking Details
+                        </div>
+                        <div class="itinerary-form-price d-inline-block">
+                            Price : <span>INR 83789</span>
+                        </div>
+                        <form action="">
+                            <div class="row mt-4 itinerary-form-inner">
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <select class="form-select shadow-none" name="select_package" data-gtm-form-interact-field-id="0">
+                                            <option value="3 Star Hotel Package">3 Star Hotel Package</option>
+                                            <option value="4 Star Hotel Package">4 Star Hotel Package</option>
+                                            <option value="5 Star Hotel Package">5 Star Hotel Package</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <input type="date" class="form-control shadow-none">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <input type="text" class="form-control shadow-none" placeholder="Your Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <input type="email" class="form-control shadow-none" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <input id="phone" name="phone" type="tel" placeholder="Enter Mobile No." class="form-control shadow-none w-100" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="itinerary-input-group">
+                                        <textarea name="" class="form-control shadow-none" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <button class="d-flex align-items-center justify-content-center w-100 border-0 itinerary-sumbit-btn">Sumbit </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tour-packages-section my-5">
+            <div class="swiper cardmainslider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card1.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <div class="tour-packages-location d-flex align-items-center position-absolute">
+                                    <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                        <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Rajasthan / 10D / 9N 
+                                </div>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">4 Night 5 Days Dubai Tour with Warner</a>
+                                </div>
+                                <div class="tour-packages-review">
+                                    4.8/5 Excellent <span> (253 Reviews)</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card6.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <div class="tour-packages-location d-flex align-items-center position-absolute">
+                                    <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                        <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Rajasthan / 10D / 9N 
+                                </div>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">4 Night 5 Days Dubai Tour with Warner</a>
+                                </div>
+                                <div class="tour-packages-review">
+                                    4.8/5 Excellent <span> (253 Reviews)</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <div class="tour-packages-location d-flex align-items-center position-absolute">
+                                    <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                        <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Rajasthan / 10D / 9N 
+                                </div>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">4 Night 5 Days Dubai Tour with Warner</a>
+                                </div>
+                                <div class="tour-packages-review">
+                                    4.8/5 Excellent <span> (253 Reviews)</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card4.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <div class="tour-packages-location d-flex align-items-center position-absolute">
+                                    <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                        <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Rajasthan / 10D / 9N 
+                                </div>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">4 Night 5 Days Dubai Tour with Warner</a>
+                                </div>
+                                <div class="tour-packages-review">
+                                    4.8/5 Excellent <span> (253 Reviews)</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card1.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <div class="tour-packages-location d-flex align-items-center position-absolute">
+                                    <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                        <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Rajasthan / 10D / 9N 
+                                </div>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">4 Night 5 Days Dubai Tour with Warner</a>
+                                </div>
+                                <div class="tour-packages-review">
+                                    4.8/5 Excellent <span> (253 Reviews)</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper cardmainslider mt-5 py-5">
+                <div class="swiper-wrapper mt-5">
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card5.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card4.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card1.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card5.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card7.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card6.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card2.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card8.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card10.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card7.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card9.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card4.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tour-packages-card tour-packages-card-two border position-relative overflow-hidden">
+                            <div class="swiper cardslider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card10.jpg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card3.jpeg" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:;" class="tour-packages-img d-block">
+                                            <img src="card4.webp" alt="tour Packages" class="h-100 w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev mt-0 tour-slider-btn d-flex align-items-center justify-content-center rounded-circle"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="tour-packages-offer position-absolute">
+                                    45%
+                                </div>
+                                <a class="card-call position-absolute rounded-circle d-flex align-items-center justify-content-center text-decoration-none" href="tel:9999999"><i class="fa fa-phone"></i>
+                                </a>
+                            </div>
+                            <div class="tour-packages-body">
+                                <div class="tour-packages-title">
+                                    <a href="" class="text-decoration-none">9 Nights 10 Days Incredible Rajasthan Tour from Delhi</a>
+                                </div>
+                                <div class="d-flex my-2 align-itesm-center justify-content-between">
+                                    <div class="tour-packages-location d-flex align-items-center ">
+                                        <span class="tour-location-icon d-flex align-items-center justify-content-center">
+                                            <img src="location.svg" alt="location" class="h-100 w-100 img-fluid">
+                                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                        </span>
+                                        Rajasthan / 10D / 9N 
+                                    </div>
+                                    <div class="tour-packages-review">
+                                        4.8/ <i class="fa-solid fa-star"></i> <span class="text-bg-light">(343)</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="tour-price-cut">
+                                        <del>
+                                            INR 151984
+                                        </del>
+                                    </div>
+                                    <div class="tour-price text-center">
+                                        <div class="tour-price-inner">
+                                            INR 83513
+                                        </div>
+                                        <div class="tour-per-adult">
+                                            Per Adult
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tour-packages-footer">
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-one d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            Enquiry Now
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center w-50">
+                                        <a href="" class="tour-packages-btn tour-packages-btn-two d-flex align-items-center justify-content-center w-100 text-decoration-none">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="glightbox.js"></script>
+    <script src="index2.js"></script>
+    <script src="intlTelInput.min.js"></script>
+
+
+    <script>
+        function toggleDiv(divNumber) {
+            for (let i = 1; i <= 3; i++) {
+                const div = document.getElementById('div' + i);
+                if (i === divNumber) {
+                    div.classList.remove('inactive');
+                    div.classList.add('active');
+                } else {
+                    div.classList.remove('active');
+                    div.classList.add('inactive');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+        initialCountry: "us",
+        utilsScript: "build/js/utils.js",
+        });
+    </script>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const targetElement = document.getElementById('targetElement');
+        toggleButton.addEventListener('click', () => {
+        toggleButton.classList.toggle('active');
+        targetElement.classList.toggle('active');
+        });
+
+    </script>
+
+    <script>
+         $(function(){
+             $('.increment').click(function() {
+                var valueElement = $('#'+$(this).siblings('input').attr('id'));
+
+                if($(this).hasClass('plus')) 
+                {
+                   valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
+                } 
+                else if (valueElement.val() > 0) // Stops the value going into negatives
+                {
+                   valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
+                } 
+
+             return false;
+        });
+
+        });
+    </script>
+
+    <script>
+        function starbtn(){
+            document.getElementById('3starcard').classList.add('active')
+        }
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".cardslider", {
+            loop:true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".cardmainslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // loop:true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 12,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 12,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const { slideIndex, slideNode, slideConfig, player } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,999 @@
+body {
+    font-family: "League Spartan", sans-serif !important;
+}
+.page-main {
+    width: 95%;
+}
+.itinerary-inner-card {
+    border-radius: 8px;
+}
+.itinerary-page-new .itinerary-main-heading {
+    font-size: 22px;
+    font-weight: 600;
+} 
+.itinerary-page-new .itinerary-star-main {
+    gap: 4px;
+}
+.itinerary-page-new .itinerary-star-main li {
+    font-size: 15px;
+    color: #ffa534;
+}
+.itinerary-page-new .itinerary-review-card {
+    padding: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 6px;
+}
+.itinerary-page-new .itinerary-review-card .review-full {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #183d4c;
+    color: #fff;
+    padding: 6px 10px;
+    line-height: normal;
+    margin-left: 6px;
+    border-radius: 4px;
+}
+.itinerary-inner-card .swiper-bottom {
+    height: 100px;
+}
+.itinerary-page-new .itinerary-review-card .itinerary-review-based {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.itinerary-review-card .itinerary-review-based span {
+    font-weight: 600;
+}
+.itinerary-page-new .best-price-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #dc3545;
+    margin-top:10px;
+}
+.itinerary-inner-card .itinerary-img {
+    height: 400px;
+}
+.itinerary-inner-card .itinerary-img img {
+    object-fit: cover;
+}
+.itinerary-inner-card .slider-btn {
+    height: 40px;
+    width: 40px;
+    background-color: #dc3545;
+    transition: all 0.3s ease-in-out;
+}
+.itinerary-inner-card .slider-btn:hover {
+    background-color:#183d4c ;
+}
+.itinerary-inner-card .slider-btn::after {
+    font-size: 16px;
+}
+.swiper-bottom .swiper-slide {
+    cursor: pointer;
+    filter: brightness(0.5);
+    transition: all 0.3s ease-in-out;
+}
+.swiper-bottom .swiper-slide:hover {
+    filter: brightness(1);
+}
+.itinerary-right-card {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.itinerary-right-card .itinerary-right-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #dc3545;
+}
+.itinerary-right-card .trave-label {
+    font-size: 18px;
+    font-weight: 600;
+}
+.itinerary-right-card .traveler-data-btn {
+    height: 42px;
+    border-radius: 6px;
+    padding: 0;
+    padding-right: 12px;
+    color: #000;
+}
+.itinerary-right-card .traveler-data-btn .toggleicon i {
+    margin-top: -6px;
+}
+.itinerary-right-card .traveler-data-btn .user-icon {
+    font-size: 18px;
+    padding-inline: 11px;
+    color: #000;
+}
+.itinerary-right-card .traveler-data-btn .traveler-data-btn-inner {
+    padding-inline: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.itinerary-right-card .traveler-menu {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    top: 140%;
+    z-index: 1;
+}
+.itinerary-right-card .traveler-menu.active {
+    min-height: 290px;
+    top: 103%;
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+    overflow-y: auto !important;
+}
+.traveler-menu .traveler-menu-header {
+    font-weight: 500;
+    padding: 10px;
+}
+.traveler-menu .traveler-menu-body {
+    padding: 13px 10px;
+}
+.traveler-menu .traveler-menu-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.traveler-menu .min-max {
+    font-size: 15px;
+}
+.traveler-menu .input-group-addon {
+    height: 25px;
+    min-width: 25px;
+    max-width: 25px;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.traveler-menu .input-group-addon:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+.traveler-menu .traveler-group input {
+    width: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.traveler-menu .traveler-apply-btn {
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 12px 18px;
+    line-height: normal;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.traveler-menu .traveler-apply-btn:hover {
+    background-color: #ce0b1f;
+}
+.itinerary-right-card .update-btn {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #dc3545;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 12px 14px;
+    line-height: normal;
+}
+.itinerary-right-card .update-btn:hover {
+    background-color: #ce0b1f;
+}
+.itinerary-right-card .calendar-input {
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 48px;
+}
+.itinerary-right-card .free-cancel-check {
+    background-color: #183d4c28;
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 6px;
+    color: #000;
+    gap: 8px;
+}
+.itinerary-right-card .free-cancel-check a {
+    font-weight: 600;
+    color: #183d4c;
+}
+.itinerary-right-card .free-cancel-check .cancel-check-icon {
+    height: 18px;
+    max-width: 18px;
+    min-width: 18px;
+    background-color: #183d4c;
+    color: #fff;
+    font-size: 12px ;
+    margin-top: 4px;
+}
+.itinerary-right-card .calendar-input-main .calendar-icon {
+    height: 42px;
+    width: 42px;
+
+}
+.itinerary-right-card .calendar-input-main .calendar-icon i {
+    margin-top: -4px;
+}
+.itinerary-right-card .form-select {
+    height: 42px;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.itinerary-right-card .form-select option {
+    line-height: 28px;
+}
+.custom-select .select-selected {
+    background-color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.custom-select .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-radius: 3px;
+    border: 6px solid transparent;
+    border-color: #333 transparent transparent transparent;
+}
+.custom-select .select-items {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
+}
+.custom-select .select-items div {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color:transparent;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 500;
+}
+.custom-select .select-items.select-hide {
+    display: none;
+}
+.custom-select .select-items div.same-as-selected {
+    background-color: #183d4c !important;
+    color: #fff;
+}
+.custom-select .select-items div:hover {
+    background-color: #e9e9e9;
+}
+.itineray-select-section .select-card {
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.select-card .select-card-check {
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    border: 1px solid #383838;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+.select-card .select-card-check i {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.select-card.active .select-card-check {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.select-card.active .select-card-check i {
+    opacity: 1;
+}
+.select-card .select-card-heading {
+    font-size: 19px;
+    line-height: normal;
+    margin-top: 2px;
+    font-weight: 600;
+}
+.select-card .select-card-content {
+    margin-top: 12px;
+}
+.select-card .select-card-content p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.select-card .select-time-main {
+    gap: 10px;
+}
+.select-card .select-time {
+    border: 2px solid #183d4c;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 5px 13px 5px 18px;
+    font-size: 17px;
+    color: #183d4c;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.select-card .select-card-btn{
+    background-color: #dc3545;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 11px 28px;
+    line-height: normal;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+}
+.select-card .select-card-price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+.select-card .select-price-adult {
+    font-size: 16px;
+    font-weight: 500;
+    margin-block: 15px;
+}
+.select-card .select-card-btn:hover {
+    background-color: #ce0b1f;
+}
+.timecheck:checked ~ .select-time {
+    background-color: #183d4c;
+    color: #fff;
+}
+.select-card .select-time .time-check {
+    top: 0;
+    left: 0;
+    background-color: #183d4c;
+    color: #fff;
+    padding: 2px 3px 3px 2px;
+    border-radius: 0 0 10px;
+    font-size: 12px;
+}
+.select-card .select-card-top{
+    padding:20px 15px;
+}
+.select-card .col-center::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -20px;
+    height: 220px;
+    width: 1px ;
+    background-color: #dee2e6;
+}
+.select-accordion .accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+    color: #dc3545;
+}
+.select-accordion .accordion-button::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    background: url(downarrow.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.select-accordion .accordion-button:not(.collapsed) {
+    color: #dc3545;
+}
+.select-accordion .accordion-button:not(.collapsed)::after{
+    background: url(downarrow.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translateY(-50%) rotate(-180deg);
+}
+.select-accordion .accordion-button,
+.select-accordion .accordion-body {
+    padding: 14px;
+}
+.select-accordion .select-data-heading {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-top: 5px;
+}
+.select-accordion .select-data-subheading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    gap: 7px;
+    color: #dc3545;
+}
+.select-accordion .select-data-subheading .select-data-like {
+    height: 19px;
+    width: 19px;
+}
+.select-accordion .select-data-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.select-accordion .accommodation-list {
+    gap: 9px;
+}
+.select-accordion .accommodation-list li {
+    padding-left: 20px;
+}
+.select-accordion .accommodation-list li::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    height: 14px;
+    width: 14px;
+    top: 4px;
+    background: url(trave-check.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.select-accordion .exclustions-list {
+    gap: 9px;
+}
+.select-accordion .exclustions-list li {
+    padding-left: 20px;
+}
+.select-accordion .exclustions-list li::before {
+    content: "\f28d";
+    position: absolute;
+    font-family: FontAwesome;
+    color: #eb1919;
+    font-size: 13px;
+    border-color: red;
+    left: 0;
+    top: 2px;
+    background: none;
+}
+.itinerary-form-card {
+    padding: 12px 12px 18px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    z-index: 1;
+}
+.itinerary-form-card .itinerary-form-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #183d4c;
+    padding: 12px;
+    border-radius: 7px;
+    line-height: normal;
+}
+.itinerary-form-card .itinerary-form-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 12px;
+    background-color: #f3f3f3;
+    padding: 6px;
+}
+.itinerary-form-card .itinerary-form-price span {
+    color: #dc3545;
+}
+.itinerary-form-card .itinerary-input-group >*,
+.itinerary-form-card .itinerary-input-group .form-control {
+    height: 43px;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.itinerary-form-card .itinerary-input-group textarea {
+    height: 90px !important;
+}
+.itinerary-form-card .itinerary-input-group >*:focus,
+.itinerary-form-card .itinerary-input-group .form-control:focus {
+    border-color: #dc3545;
+}
+.itinerary-form-card .itinerary-form-inner {
+    gap: 12px;
+}
+.itinerary-form-card .itinerary-sumbit-btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 12px ;
+    transition: all 0.3s ease-in-out;
+    line-height: normal;
+}
+.itinerary-form-card .itinerary-sumbit-btn:hover {
+    background-color: #ce0b1f;
+}
+
+.tour-packages-card {
+    border-radius: 10px;
+}
+.tour-packages-card .tour-slider-btn {
+    height: 23px;
+    width: 23px;
+    background-color: #fff;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #dc3545;
+    transition: all 0.3s ease-in-out;
+}
+.tour-packages-card .tour-slider-btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.tour-packages-card .tour-slider-btn::after {
+    display: none;
+}
+.tour-packages-card .tour-packages-img {
+    height: 210px;
+}
+.tour-packages-card .tour-packages-offer {
+    padding: 24px 48px 5px;
+    line-height: normal;
+    top: -8px;
+    font-size: 17px;
+    font-weight: 600;
+    /* left: 50%; */
+    right: -51px;
+    transform: rotate(45deg);
+    z-index: 1;
+    color: #dc3545;
+    background-color:#fff ;
+}
+.tour-packages-card .tour-packages-location {
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
+    color: #fff ;
+    bottom: 0px;
+    left: 1px;
+    /* background: #dc3545; */
+    line-height: normal;
+    padding: 4px 6px;
+}
+.tour-packages-card .tour-packages-location .tour-location-icon {
+    height: 23px;
+    width: 24px;
+}
+.tour-packages-card .tour-packages-body {
+    padding: 10px;
+}
+.tour-packages-card .tour-packages-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.tour-packages-card .tour-packages-title a {
+    font-weight: 600;
+    color: #000;
+    font-size: 17px;
+    line-height:26px ;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+.tour-packages-card .tour-packages-title a:hover {
+    color: #dc3545;
+}
+.tour-packages-card .tour-packages-review {
+    font-weight: 500;
+    margin-block: 6px;
+    color: #dc3545;
+}
+.tour-packages-card .tour-packages-review span {
+    color: #000;
+}
+.tour-packages-card .tour-price-cut {
+    font-size: 17px;
+    color: #dc3545;
+}
+.tour-packages-card .tour-price-inner {
+    font-size: 18px;
+    font-weight: 600;
+}
+.tour-packages-card .tour-per-adult {
+    line-height: normal;
+    margin-top: 0px;
+    font-size: 15px;
+}
+.tour-packages-card .tour-packages-footer {
+    gap: 13px;
+    margin-top: 16px;
+}
+.tour-packages-card .tour-packages-btn {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px ;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    line-height: normal;
+}
+.tour-packages-card .tour-packages-btn-one {
+    background-color: #dc3545;
+}
+.tour-packages-card .tour-packages-btn-one:hover {
+    background-color: #ce0b1f;
+}
+.tour-packages-card .tour-packages-btn-two {
+    background-color: #183d4c;
+}
+.tour-packages-card .tour-packages-btn-two:hover {
+    background-color: #062f3f;
+}
+.tour-packages-card-two .tour-packages-location {
+    color: #000;
+    padding: 0;
+    gap: 5px;
+}
+.tour-packages-card-two .tour-packages-location .tour-location-icon {
+    height: 22px;
+    width: 18px;
+}
+.tour-packages-card-two .tour-packages-review {
+    color: #19ad6f;
+    margin: 0;
+}
+.tour-packages-card-two .card-call {
+	z-index: 99999;
+	right: 10px;
+	bottom: 10px;
+	background: #dc3545;
+	width: 40px;
+	height: 40px;
+	color: #ffffff;
+	animation: cc-calto-action-ripple 0.6s linear infinite;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.tour-packages-card-two .card-call:hover {
+    transform: scale(1.1);
+}
+.tour-packages-card-two .card-call i {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+@keyframes cc-calto-action-ripple {
+    0% {
+        -webkit-box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2), 0 0 0 0 rgba(220, 53, 69, 0.2), 0 0 0 5px rgba(220, 53, 69, 0.2), 0 0 0 10px rgba(220, 53, 69, 0.2);
+        box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2), 0 0 0 0 rgba(220, 53, 69, 0.2), 0 0 0 5px rgba(220, 53, 69, 0.2), 0 0 0 10px rgba(220, 53, 69, 0.2); 
+    }
+    100% {
+        -webkit-box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2), 0 0 0 5px rgba(220, 53, 69, 0.2), 0 0 0 10px rgba(220, 53, 69, 0.2), 0 0 0 20px rgba(220, 53, 69, 0);
+        box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2), 0 0 0 5px rgba(220, 53, 69, 0.2), 0 0 0 10px rgba(220, 53, 69, 0.2), 0 0 0 20px rgba(220, 53, 69, 0);
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form-section .country-name p {
+    font-size: 18px;
+}
+.form-section .card-header {
+    background: #f8fafc;
+    padding-block: 14px;
+}
+.form-section .form-heading h2 {
+    color: #000;
+    line-height: normal;
+}
+.form-section .progress-list {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #666;
+}
+.form-section .progress-list.active {
+    color: #183d4c;
+}
+.form-section .progress-list li {
+    flex: 1;
+}
+.form-section .progress-list li span {
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+}
+.form-section .progress-list li::before {
+    width: 40px;
+    height: 40px;
+    line-height: normal;
+    font-size: 18px;
+    color: #fff;
+    background: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-left: 9px;
+}
+.form-section .progress-list li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 12px;
+    top: 25px;
+    z-index: -1;
+}
+.form-section .progress-list li.active span {
+    color: #000;
+}
+.form-section .progress-list li.active:before {
+    background: #183d4c;
+}
+.form-section .progress-list li.active:after {
+    background: #183d4c;
+}
+.form-section .progress-list .tripdetail:before {
+    content: "1";
+    
+}
+.form-section .progress-list .yourinfo:before {
+    content: "2";
+    margin-inline: auto;
+}
+.form-section .progress-list .checkout:before {
+    content: "3";
+    margin-left: auto   ;
+}
+.form-section .input-card {
+    padding: 20px 15px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-section .form-inner-heading {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+.form-section .form-inner-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 50px;
+    background-color: #183d4c;
+    border-radius: 4px;
+}
+.form-section .form-inner-subheading {
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-section .input-main .input-label {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    font-weight: 500;
+    line-height: normal;
+}
+.form-section .input-main .input-label span {
+    color: red;
+}
+.form-section .input-main .form-input {
+    font-size: 16px;
+    color: #000;
+    height: 42px;
+    border-radius: 5px !important;
+    position: relative;
+}
+.form-section .input-main .form-input:focus {
+    border: 2px solid #183d4c;
+}
+.form-section .input-main input[type="date"]::before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background: url(../img/date.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.form-section .input-main input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.form-section .checkbox {
+    accent-color: #183d4c;
+    height: 20px;
+}
+.form-section .privacy-policy-title {
+    font-size: 15px;
+    margin-left: 8px;
+    line-height: 16px;
+    color: #333;
+    font-weight: 500;
+}
+.form-section .number-field .iti {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.form-section .number-field .iti .iti__flag-container {
+    position: unset;
+    height: 45px;
+}
+.form-section .number-field .iti .iti__country-list {
+    width: 100%;
+}
+.form-section .action-button {
+    background: #183d4c;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 27px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500 !important;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: normal;
+    border-radius: 5px !important;
+}
+.form-section .action-button i {
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.form-section .action-button.action-button-two {
+    width: 300px;
+    padding-block: 8px;
+}
+.form-section .action-button:hover i {
+    transform: translateX(5px);
+}
+.form-section .action-button.previous {
+    background-color: gray;
+}
+.form-section .action-button.previous:hover i {
+    transform: translateX(-5px);
+}
+.form-section .form-card-main fieldset:not(:first-of-type) {
+    display: none;
+}
+.form-section .card-data-main {
+    padding-block: 10px;
+}
+.form-section .checkout-card {
+    top: 0px;
+    z-index: 0;
+}
+.form-section .checkout-card .checkout-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    line-height: normal;
+}
+.form-section .checkout-card .checkout-price {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    line-height: 18px;
+}
+.form-section .checkout-card .checkout-data {
+    margin-top: 4px;
+    font-size: 15px;
+    color: gray;
+}
+.form-section .checkout-card .checkout-data p {
+    font-size: 15px;
+    color: gray;
+}
+.form-section .checkout-card .checkout-footer {
+    background-color: #f8fafc;
+}
+.form-section .checkout-card .checkout-price-two {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.form-section .checkout-card .security-icon {
+    height: 17px;
+    margin-top: 3px;
+    margin-right: 2px;
+}
+.form-section .checkout-card .secure-heading {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 500;
+}
+.form-section .checkout-card .secure-title {
+    font-size: 13px;
+    color: #333;
+}
+.form-section .checkout-card .secure-title a {
+    color: #183d4c;
+}
+.form-section .detail-accordion .accordion-item {
+    border-width: 2px !important;
+}
+.form-section .detail-accordion .accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+}
+.form-section .detail-accordion .accordion-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    height: 17px;
+    width: 17px;
+    background: url(../downarrow2.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: brightness(0);
+}
+.form-section .detail-accordion .accordion-button:not(.collapsed) {
+    color: #183d4c;
+}
+.form-section .detail-accordion .accordion-button:not(.collapsed)::after {
+    transform: translateY(-50%) rotate(-180deg);
+    filter: none;
+}
+.form-section .detail-accordion .accordion-body {
+    border-top-width: 2px !important;
+}
+.input-card .checkout-card-heading {
+    font-size: 19px;
+    font-weight: 600;
+}
+.custom-btn {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500;
+    background-color: #183d4c;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 22px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.custom-btn i {
+    transition: all 0.3s ease-in-out;
+    margin-left: 2px;
+    font-size: 14px;
+}
+.custom-btn:hover {
+    background-color: darken(#183d4c, 10);
+}
+.custom-btn:hover i {
+    transform: translateX(5px);
+   }

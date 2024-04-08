@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Calendar</title>
+<style>
+  /* Calendar styling */
+  .calendar {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+  }
+  .calendar.active {
+    display: block;
+  }
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .week-days {
+    display: flex;
+  }
+  .week-day {
+    flex: 1;
+    text-align: center;
+  }
+  .date {
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 50%;
+  }
+  .current-date {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  .selected-date {
+    background-color: #00ff00;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+
+<input type="text" id="datepicker" placeholder="Select date">
+
+<div class="calendar" id="calendar">
+  <div class="calendar-header">
+    <button id="prevMonth">&lt;</button>
+    <span id="currentMonthYear"></span>
+    <button id="nextMonth">&gt;</button>
+  </div>
+  <table id="calendarTable">
+    <thead>
+      <tr id="weekDays"></tr>
+    </thead>
+    <tbody id="calendarBody"></tbody>
+  </table>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const input = document.getElementById("datepicker");
+    const calendar = document.getElementById("calendar");
+    const currentMonthYear = document.getElementById("currentMonthYear");
+    const weekDaysRow = document.getElementById("weekDays");
+    const calendarBody = document.getElementById("calendarBody");
+    const calendarTable = document.getElementById("calendarTable");
+
+    // Function to generate calendar for a given month and year
+    function generateCalendar(month, year) {
+        calendarBody.innerHTML = '';
+        weekDaysRow.innerHTML = '';
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+        const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        weekDays.forEach(day => {
+            const weekDayCell = document.createElement('th');
+            weekDayCell.textContent = day;
+            weekDaysRow.appendChild(weekDayCell);
+        });
+
+        for (let i = 0; i < firstDayOfMonth; i++) {
+            const emptyCell = document.createElement('td');
+            calendarBody.appendChild(emptyCell);
+        }
+
+        let dayCount = 1;
+        for (let row = 0; row < 6; row++) {
+            const newRow = document.createElement('tr');
+            for (let col = 0; col < 7; col++) {
+                if (row === 0 && col < firstDayOfMonth) {
+                    // Empty cells before the first day of the month
+                    newRow.insertCell();
+                } else if (dayCount <= daysInMonth) {
+                    const newCell = newRow.insertCell();
+                    newCell.textContent = dayCount;
+                    newCell.classList.add('date');
+                    if (dayCount === currentDate.getDate() && month === currentDate.getMonth() && year === currentDate.getFullYear()) {
+                        newCell.classList.add('current-date');
+                    }
+                    if (new Date(year, month, dayCount) < currentDate) {
+                        newCell.classList.add('disabled');
+                    }
+                    dayCount++;
+
+                    // Set prices dynamically (replace with your logic)
+                    const price = calculatePrice(year, month, dayCount);
+                    if (price) {
+                        const priceTag = document.createElement('span');
+                        priceTag.textContent = '$' + price;
+                        newCell.appendChild(priceTag);
+                    }
+                }
+            }
+            calendarBody.appendChild(newRow);
+        }
+
+        currentMonthYear.textContent = `${monthNames[month]} ${year}`;
+    }
+
+    // Function to show/hide calendar
+    function toggleCalendar() {
+        calendar.classList.toggle('active');
+    }
+
+    // Function to handle date selection
+    function handleDateSelection(e) {
+        const selectedDate = e.target.textContent;
+        const selectedMonthYear = currentMonthYear.textContent;
+        input.value = `${selectedDate} ${selectedMonthYear}`;
+        toggleCalendar();
+        // Remove selected date class from previous selected date
+        const selectedDateElem = calendarBody.querySelector('.selected-date');
+        if (selectedDateElem) {
+            selectedDateElem.classList.remove('selected-date');
+        }
+        // Add selected date class to current selected date
+        e.target.classList.add('selected-date');
+    }
+
+    // Event listener for input click
+    input.addEventListener("click", toggleCalendar);
+
+    // Event listener for date selection
+    calendarBody.addEventListener("click", function(e) {
+        if (!e.target.classList.contains('disabled')) {
+            handleDateSelection(e);
+        }
+    });
+
+    // Initial setup
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    generateCalendar(currentMonth, currentYear);
+
+    // Event listener for previous month button
+    document.getElementById("prevMonth").addEventListener("click", function() {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    // Event listener for next month button
+    document.getElementById("nextMonth").addEventListener("click", function() {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    // Function to calculate price (replace with your logic)
+    function calculatePrice(year, month, date) {
+        // Example logic: price increases with the date number
+        return date * 2;
+    }
+});
+
+
+</script>
+
+</body>
+</html>

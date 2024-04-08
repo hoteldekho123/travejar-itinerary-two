@@ -1,0 +1,122 @@
+.calendar {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.calendar.active {
+    display: block;
+}
+.calendar-header {
+    margin-bottom: 10px;
+}
+.calendar-new .calendar-detail tr td {
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 45px;
+    max-width: 45px;
+    width: 45px;
+    min-width: 45px;
+}
+.calendar-new .calendar-detail tr td::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0 ;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 2;
+}
+.calendar-new .calendar-detail tr td p {
+    height: 45px;
+    max-width: 45px;
+    width: 45px;
+    min-width: 45px;
+    border-radius: 50%;
+    flex-direction: column;
+    line-height: normal;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+    padding-top: 8px;
+}
+.calendar-new .calendar-detail .date.selected-date p,
+.calendar-new .calendar-detail .date p.selected-date {
+    background-color: #da0217;
+    color: #fff;
+}
+.calendar-new .calendar-detail .date.selected-date .price {
+    color: #fff;
+}
+.calendar-new .calendar-detail tr td span {
+    position: absolute;
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 3px;
+    bottom: 2px;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-55%);
+    transition: all 0.3s ease-in-out;
+}
+.calendar-new .calendar-detail .date.current-date p {
+    background-color: #dc3545;
+    color: #fff;
+}
+.calendar-new .calendar-detail .date.current-date span {
+    color: #fff;
+}
+.calendar-new .calendar-head {
+    margin-block: 15px;
+}
+.calendar-new .calendar-head th {
+    text-align: center;
+    height: 50px;
+    color: #7c7c7c;
+    font-weight: 500;
+}
+.calendar-new .calendar-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+.calendar-new .calendar-button {
+    height: 28px;
+    width: 28px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+.calendar-new .calendar-detail tr td:hover p {
+    background-color: #dc354698;
+    color: #fff;
+}
+.calendar-new .calendar-detail tr td.disabled {
+    color: #7c7c7c;
+    cursor: not-allowed;
+}
+.calendar-new .calendar-detail tr td.disabled:hover p {
+    color: #7c7c7c;
+    background-color: #ffff;
+}
+.calendar-new .calendar-detail tr td.disabled .price {
+    display: none;
+}
+.calendar-new .calendar-detail tr .date.current-date {
+    cursor: pointer;
+}
+.calendar-new .calendar-detail tr .date.current-date:hover p {
+    background-color: #dc354698;
+    color: #fff;
+}
+.calendar-new .calendar-detail tr .date.current-date .price {
+    display: unset;
+}
